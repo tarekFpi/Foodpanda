@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawerlayout_user"
+    tools:context=".product_showFragment">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+  <com.google.android.material.appbar.AppBarLayout
+      android:id="@+id/appbar_Id"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_Id"
+        android:background="#F330BB"
+        app:titleTextColor="@color/white"
+        app:title="Foodpanda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+  </com.google.android.material.appbar.AppBarLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_below="@+id/appbar_Id"
+        android:layout_marginTop="10dp"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/recycler_product"/>
+
+
+</RelativeLayout>
+
+  <com.google.android.material.navigation.NavigationView
+      android:id="@+id/navigation_id"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      app:menu="@menu/header"
+      android:fitsSystemWindows="true"
+      android:layout_gravity="start"/>
+
+</androidx.drawerlayout.widget.DrawerLayout>

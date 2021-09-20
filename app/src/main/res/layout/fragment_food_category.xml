@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Food_category">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar_Id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_Id2"
+            android:background="@color/purple_500"
+            app:titleTextColor="@color/white"
+            app:title="Foodpanda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <LinearLayout
+    android:layout_below="@+id/appbar_Id"
+    android:id="@+id/minLayout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_gravity="center"
+        app:cardCornerRadius="10dp"
+        app:cardMaxElevation="20dp"
+        android:elevation="25dp"
+        app:cardElevation="25dp"
+        android:layout_width="380dp"
+        android:layout_height="220dp">
+
+        <com.denzcoskun.imageslider.ImageSlider
+            android:elevation="20dp"
+            android:layout_gravity="center"
+            android:id="@+id/categoryProduct_image"
+            android:layout_width="350dp"
+            android:layout_height="220dp"
+            app:iss_auto_cycle="true"
+            app:iss_period="1000"
+            android:scaleType="fitXY"
+             />
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
+
+    <TextView
+        android:textColor="#151514"
+        android:layout_marginRight="6dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/minLayout"
+        android:id="@+id/restaurants_deatils_id"
+        android:layout_marginTop="7dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Restaurants Deatils"/>
+
+    <LinearLayout
+        android:id="@+id/layut_catgory"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/restaurants_deatils_id"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/sub_menu_recyclerview2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <RelativeLayout
+
+        android:id="@+id/order_cart_layout"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/layut_catgory"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <androidx.cardview.widget.CardView
+            android:elevation="30dp"
+            app:cardCornerRadius="10dp"
+            app:cardMaxElevation="30dp"
+            app:cardElevation="30dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text_cartCount"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="7dp"
+                android:textSize="15dp"
+                android:textColor="#8717AF"
+                android:text="Count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <info.hoang8f.widget.FButton
+                android:id="@+id/view_to_Cart"
+                android:layout_gravity="center"
+                android:layout_width="200dp"
+                android:textSize="16dp"
+                android:text="View To Cart"
+                android:layout_height="wrap_content"/>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+</RelativeLayout>

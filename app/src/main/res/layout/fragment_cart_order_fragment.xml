@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".cartOrder_fragment">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar_Id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_Id3"
+            android:background="@color/purple_500"
+            app:titleTextColor="@color/white"
+            app:title="Foodpanda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_below="@+id/appbar_Id"
+        android:id="@+id/lottie_animation"
+        android:layout_width="wrap_content"
+         app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/man_delivery"
+        app:lottie_loop="true"
+        android:layout_height="300dp">
+
+    </com.airbnb.lottie.LottieAnimationView>
+
+    <ScrollView
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/lottie_animation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/laout_order"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cartOrder_recyclerview"/>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_below="@+id/cartOrder_recyclerview"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                app:cardElevation="20dp"
+                app:cardMaxElevation="20dp"
+                app:cardCornerRadius="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/layout_userVerify"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/cart_total_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/cart_quanitiy"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginRight="7dp"
+                        android:layout_marginBottom="5dp"
+                        android:elevation="20dp"
+                        android:text="Total price:"
+                        android:textAlignment="center"
+                        android:textColor="#C719D3"
+                        android:textSize="17sp"
+                        android:textStyle="normal" />
+
+                    <info.hoang8f.widget.FButton
+                        android:id="@+id/verify_adddress"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="#B415CF"
+                        android:text="Verify User Address"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="20dp"
+    app:cardCornerRadius="10dp"
+    app:cardMaxElevation="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_margin="5dp"
+    android:layout_marginRight="10dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginLeft="7dp"
+            android:id="@+id/cartf_area_Name"
+            android:textColor="#090908"
+            android:textStyle="normal"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:text="Area Name:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginLeft="7dp"
+            android:id="@+id/cart_fFrestardent_Name"
+            android:textColor="#090908"
+            android:textStyle="normal"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:text="Restaudent Name:"
+            android:layout_below="@+id/cartf_area_Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginLeft="7dp"
+            android:id="@+id/cartf_product_Name"
+            android:textColor="#090908"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:text="product :Name"
+            android:layout_below="@+id/cart_fFrestardent_Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="7dp"
+            android:id="@+id/cartf_delivary_free"
+            android:textColor="#090908"
+            android:textStyle="normal"
+            android:textSize="15sp"
+            android:layout_marginTop="7dp"
+            android:text="Delivary Free:"
+            android:layout_below="@+id/cartf_product_Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="7dp"
+            android:id="@+id/cartf_quanitiy"
+            android:textColor="#090908"
+            android:textStyle="normal"
+            android:textSize="15sp"
+            android:layout_marginTop="7dp"
+            android:text="Quanitiy:"
+            android:layout_below="@+id/cartf_delivary_free"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="7dp"
+            android:id="@+id/fuser_name"
+            android:textColor="#090908"
+            android:textStyle="normal"
+            android:textSize="15sp"
+            android:layout_marginTop="7dp"
+            android:text="User Name:"
+            android:layout_below="@+id/cartf_quanitiy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="7dp"
+            android:id="@+id/fgmail"
+            android:textColor="#090908"
+            android:textStyle="normal"
+            android:textSize="15sp"
+            android:layout_marginTop="7dp"
+            android:text="Gmail:"
+            android:layout_below="@+id/fuser_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="7dp"
+            android:id="@+id/fArea"
+            android:textColor="#090908"
+            android:textStyle="normal"
+            android:textSize="15sp"
+            android:layout_marginTop="7dp"
+            android:text="Area:"
+            android:layout_below="@+id/fgmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="7dp"
+            android:id="@+id/fFloat_id"
+            android:textColor="#090908"
+            android:textStyle="normal"
+            android:textSize="15sp"
+            android:layout_marginTop="7dp"
+            android:text="Float On:"
+            android:layout_below="@+id/fArea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="7dp"
+            android:id="@+id/fcity"
+            android:textColor="#090908"
+            android:textStyle="normal"
+            android:textSize="15sp"
+            android:layout_marginTop="7dp"
+            android:text="City:"
+            android:layout_below="@+id/fFloat_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="7dp"
+            android:id="@+id/fphone"
+            android:textColor="#090908"
+            android:textStyle="normal"
+            android:textSize="15sp"
+            android:layout_marginTop="7dp"
+            android:text="Phone:"
+            android:layout_below="@+id/fcity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginRight="7dp"
+            android:layout_alignBaseline="@+id/restardent_Name"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/cartf_sellPrice"
+            android:textColor="#196DD3"
+            android:textStyle="normal"
+            android:textSize="15sp"
+            android:text="Sell price:"
+            android:layout_below="@+id/cartf_product_Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginRight="7dp"
+            android:layout_alignBaseline="@+id/cartf_quanitiy"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="6dp"
+            android:id="@+id/cartf_discount"
+            android:textColor="#D3196A"
+            android:textStyle="normal"
+            android:textSize="15sp"
+            android:layout_marginTop="7dp"
+            android:text="Discount:"
+            android:layout_below="@+id/cart_quanitiy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
